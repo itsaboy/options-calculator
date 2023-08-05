@@ -1,0 +1,22 @@
+/* ==========================================================================
+   Animations and FX
+========================================================================== */
+
+/* Buttons */
+
+.main-grid-item button:hover {
+    cursor: pointer;
+    border: solid var(--txt-color) 2px;
+}
+
+.main-grid-item button:active {
+    cursor: pointer;
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+/* Inputs */
+
+.main-grid-item input:focus, select:focus {
+    outline: dashed rgb(158, 163, 173) 2px;   
+}

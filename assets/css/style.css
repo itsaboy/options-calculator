@@ -32,6 +32,8 @@
 
 .main-grid-item {
     background-color: var(--section-bg-color);
+    border-radius: 1.75rem;
+    box-shadow: var(--shadow-elevation-medium);
 }
 
 .main-grid-item > * label, h2, button, select {
@@ -39,8 +41,39 @@
 }
 
 .main-grid-item select, button, input{
-    width: clamp(125px, 10vw, 200px);
+    width: clamp(150px, 10vw, 200px);
     text-align: center;
+}
+
+.main-grid-item input {
+    font-size: var(--small-txt);
+    padding: 0.25rem;
+    box-shadow: var(--shadow-elevation-medium);
+}
+
+.main-grid-item button {
+    padding: 0.75rem;
+    border: none;
+    border-right: solid black 2px;
+    border-bottom: solid black 2px;
+    border-radius: 2rem;
+    box-shadow: var(--shadow-elevation-high);
+}
+
+#calculate-btn {
+    background-color: var(--green-txt-color);
+}
+
+#clear-btn {
+    background-color: var(--red-txt-color);
+}
+
+.green-txt {
+    color: var(--green-txt-color);
+}
+
+.red-txt {
+    color: var(--red-txt-color);
 }
 
 /* ==========================================================================
