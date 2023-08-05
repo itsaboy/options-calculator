@@ -1,0 +1,195 @@
+/* ==========================================================================
+   Body Grid Layout
+========================================================================== */
+
+.body-grid-container {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    gap: 1.5rem;
+}
+
+/* Body Grid Items */
+
+#header {
+    grid-area: header;
+}
+
+#main {
+    grid-area: main;
+}
+
+#footer {
+    grid-area: footer;
+}
+
+/* ==========================================================================
+   Header Grid Layout
+========================================================================== */
+
+.header-grid-container {
+    display: grid;
+    grid-template-areas:
+    "header-heading";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    place-items: center;
+    height: 100%;
+}
+
+/* Header Grid Items */
+
+#header-heading {
+    grid-area: header-heading;
+}
+
+#one-leg-btn {
+    grid-area: one-leg-btn;
+}
+
+#two-legs-btn {
+    grid-area: two-legs-btn;
+}
+
+/* ==========================================================================
+   Main Grid Layout
+========================================================================== */
+
+.main-grid-container {
+    display: grid;
+    grid-template-areas:
+    "section-one section-three"
+    "section-two section-three";
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    gap: 1.5rem;
+}
+
+/* Main Grid Items */
+
+#section-one {
+    grid-area: section-one;
+}
+
+#section-two  {
+    grid-area: section-two;
+}
+
+#section-three  {
+    grid-area: section-three;
+}
+
+/* Section One Grid Layout
+========================================================================== */
+
+.section-one-grid-container {
+    display: grid;
+    grid-template-areas:
+    "strategy-label side-label"
+    "strategy-select side-select";
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    place-items: center;
+}
+
+/* Section One Grid Items */
+
+#strategy-label {
+    grid-area: strategy-label;
+}
+
+#side-label {
+    grid-area: side-label;
+}
+
+#strategy-input {
+    grid-area: strategy-input;
+}
+
+#side-input {
+    grid-area: side-input;
+}
+
+/* Section Two Grid Layout
+========================================================================== */
+
+.section-two-grid-container {
+    display: grid;
+    grid-template-areas:
+    "ticker-label price-label"
+    "ticker-input price-input"
+    "strike-label premium-label"
+    "strike-input premium-input";
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    place-items: center;
+}
+
+/* Section Two Grid Items */
+
+#ticker-label {
+    grid-area: ticker-label;
+}
+
+#price-label {
+    grid-area: price-label;
+}
+
+#strike-label {
+    grid-area: strike-label;
+}
+
+#premium-label {
+    grid-area: premium-label;
+}
+
+#ticker-input {
+    grid-area: ticker-input;
+}
+
+#price-input {
+    grid-area: price-input;
+}
+
+#strike-input {
+    grid-area: strike-input;
+}
+
+#premium-input {
+    grid-area: premium-input;
+}
+
+/* Section Three Grid Layout
+========================================================================== */
+
+.section-three-grid-container {
+    display: grid;
+    grid-template-areas:
+    "calculate-btn clear-btn"
+    "result-label result-output"
+    "percent-label percent-output";
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    place-items: center;
+}
+
+/* ==========================================================================
+   Footer Grid Layout
+========================================================================== */
+
+.footer-grid-container {
+    display: grid;
+    place-items: center;
+    height: 100%;
+}

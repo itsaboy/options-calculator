@@ -1,0 +1,53 @@
+/* ==========================================================================
+   Body
+========================================================================== */
+
+.body {
+    background-color: var(--body-bg-color);
+    color: var(--txt-color);
+    font-family: Ubuntu;
+    text-align: center;
+}
+
+/* ==========================================================================
+   Header
+========================================================================== */
+
+.header {
+    background-color: var(--header-bg-color);
+    font-size: var(--largest-txt);
+}
+
+.header-btn {
+    font-size: var(--large-txt);
+}
+
+/* ==========================================================================
+   Main
+========================================================================== */
+
+.main {
+    background-color: var(--main-bg-color);
+}
+
+.main-grid-item {
+    background-color: var(--section-bg-color);
+}
+
+.main-grid-item > * label, h2, button, select {
+    font-size: var(--normal-txt);
+}
+
+.main-grid-item select, button, input{
+    width: clamp(125px, 10vw, 200px);
+    text-align: center;
+}
+
+/* ==========================================================================
+   Footer
+========================================================================== */
+
+.footer {
+    background-color: var(--footer-bg-color);
+    font-size: var(--small-txt);
+}

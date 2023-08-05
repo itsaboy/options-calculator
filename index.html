@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible">
+        <title>Options Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/variables.css">
+        <link rel="stylesheet" href="./assets/css/layout.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/anims.css">
+        <link rel="stylesheet" href="./assets/css/queries.css">
+    </head>
+
+    <body class="body">
+        <div class="body-grid-container">
+
+            <header class="body-grid-item header" id="header">
+                <div class="header-grid-container">
+                    <h1 id="header-heading">Options Calculator</h1>
+                </div>
+            </header>
+
+            <main class="body-grid-item main" id="main">
+                <div class="main-grid-container">
+
+                    <section class="main-grid-item" id="section-one">
+                        <div class="section-one-grid-container">
+                            <label id="strategy-label">Long or Short?</label>
+                            <select id="stragey-select">
+                                <option>Long</option>
+                                <option>Short</option>
+                            </select>
+                            <label id="side-label">Call or Put?</label>
+                            <select id="side-select">
+                                <option>Call</option>
+                                <option>Put</option>
+                            </select>
+                        </div>
+                    </section>
+
+                    <section class="main-grid-item" id="section-two">
+                        <div class="section-two-grid-container">
+                            <label for="ticker" id="ticker-label">Ticker Symbol</label>
+                            <input type="text" id="ticker-input" name="ticker">
+                            <label for="price" id="price-label">Underlying Price</label>
+                            <input type="text" pattern="[0-9]" id="price-input" name="price">
+                            <label for="strike" id="strike-label">Strike Price</label>
+                            <input type="text" pattern="[0-9]" id="strike-input" name="strike">
+                            <label for="premium" id="premium-label">Premium</label>
+                            <input type="text" pattern="[0-9]" id="premium-input" name="premium">
+                        </div>
+                    </section>
+
+                    <section class="main-grid-item" id="section-three">
+                        <div class="section-three-grid-container">
+                            <button id="calculate-btn">Calculate</button>
+                            <button id="clear-btn">Clear</button>
+                            <h2 id="result-label">Breakeven:</h2>
+                            <h2 id="result-output">$</h2>
+                            <h2 is="percent-label">% to Breakeven:</h2>
+                            <h2 id="percent-output">%</h2>    
+                        </div>
+                    </section>
+
+                </div>
+            </main>
+
+            <footer class="body-grid-item footer" id="footer">
+                <div class="footer-grid-container">
+                    <p>Disclaimer: Options are dangerous!</p>
+                </div>
+            </footer>
+
+        </div>
+    </body>
+</html>

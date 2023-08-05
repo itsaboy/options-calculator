@@ -1,0 +1,30 @@
+/* ==========================================================================
+   Root
+========================================================================== */
+
+:root {
+    /* Background Colors */
+    --body-bg-color: rgb(33, 32, 30);
+    --header-bg-color: rgb(15, 51, 37);
+    --main-bg-color: rgb(33, 32, 30);
+    --section-bg-color: rgb(46, 48, 51);
+    --footer-bg-color: rgb(173, 0, 14);
+
+    /* Text Colors */
+    --txt-color: rgb(225, 225, 225);
+
+    /* Text Size */
+    --largest-txt: clamp(3rem, 5vh + 1rem, 10rem);
+    --large-txt: clamp(2rem, 2.5vh + 1rem, 6rem);
+    --normal-txt: clamp(1rem, 1vh + 1rem, 4rem);
+    --small-txt: clamp(0.75rem, 0.5vh + 1rem, 2rem);
+}
+
+/* ==========================================================================
+   Fonts
+========================================================================== */
+
+@font-face {
+    font-family: Ubuntu;
+    src: url('/assets/fonts/Ubuntu-Regular.ttf');
+}
