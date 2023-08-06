@@ -21,17 +21,26 @@
 
 @media only screen and (max-width: 576px) {
 
+    .main-grid-container {
+        grid-template-areas:
+        "section-one"
+        "section-two"
+        "section-three";
+        grid-template-rows: 0.5fr 1fr 2fr;
+        grid-template-columns: 1fr;
+    }
+
     .section-one-grid-container {
         grid-template-areas:
-        "strategy-label"
-        "strategy-select" 
         "side-label"
-        "side-select";
+        "side-select" 
+        "strategy-label"
+        "strategy-select";
         grid-template-rows: repeat(4, 1fr);
         grid-template-columns: 1fr;
     }
 
-    .section-two-grid-container {
+    .form-grid-container {
         grid-template-areas:
         "ticker-label"
         "ticker-input"
@@ -48,12 +57,10 @@
     .section-three-grid-container {
         grid-template-areas:
         "calculate-btn"
-        "result-label"
         "result-output"
-        "percent-label"
         "percent-output"
         "clear-btn";
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: repeat(4, 1fr);
         grid-template-columns: 1fr;
     }
 

@@ -14,6 +14,9 @@
         <link rel="stylesheet" href="./assets/css/style.css">
         <link rel="stylesheet" href="./assets/css/anims.css">
         <link rel="stylesheet" href="./assets/css/queries.css">
+        <script src="./assets/scripts/dom.js" defer></script>
+        <script src="./assets/scripts/calc.js" defer></script>
+        <script src="./assets/scripts/events.js" defer></script>
     </head>
 
     <body class="body">
@@ -28,42 +31,44 @@
             <main class="body-grid-item main" id="main">
                 <div class="main-grid-container">
 
-                    <section class="main-grid-item" id="section-one">
+                    <section class="main-grid-item section-one" id="section-one">
                         <div class="section-one-grid-container">
-                            <label for="stragey-select" id="strategy-label"><span class="green-txt">Long</span> or <span class="red-txt">Short</span>?</label>
-                            <select id="stragey-select">
-                                <option>Long</option>
-                                <option>Short</option>
-                            </select>
-                            <label for="side-select" id="side-label"><span class="green-txt">Call</span> or <span class="red-txt">Put</span>?</label>
+                            <label for="side-select" id="side-label"><span class="green-txt">Long</span> or <span class="red-txt">Short</span>?</label>
                             <select id="side-select">
-                                <option>Call</option>
-                                <option>Put</option>
+                                <option id="select-long" value="long">Long</option>
+                                <option id="select-short" value="short">Short</option>
+                            </select>
+                            <label for="strategy-select" id="strategy-label"><span class="green-txt">Call</span> or <span class="red-txt">Put</span>?</label>
+                            <select id="strategy-select">
+                                <option id="select-call" value="call">Call</option>
+                                <option id="select-put" value="put">Put</option>
                             </select>
                         </div>
                     </section>
 
-                    <section class="main-grid-item" id="section-two">
+                    <section class="main-grid-item section-two" id="section-two">
                         <div class="section-two-grid-container">
-                            <label for="ticker-input" id="ticker-label">Ticker Symbol</label>
-                            <input type="text" id="ticker-input" name="ticker" placeholder="XYZ">
-                            <label for="price-input" id="price-label">Underlying Price</label>
-                            <input type="text" pattern="[0-9]" id="price-input" name="price" placeholder="0.00">
-                            <label for="strike-input" id="strike-label">Strike Price</label>
-                            <input type="text" pattern="[0-9]" id="strike-input" name="strike"placeholder="0.00">
-                            <label for="premium-input" id="premium-label">Premium</label>
-                            <input type="text" pattern="[0-9]" id="premium-input" name="premium"placeholder="0.00">
+                            <form class="input-form" id="input-form">
+                                <div class="form-grid-container">
+                                    <label for="ticker-input" id="ticker-label">Ticker Symbol</label>
+                                    <input type="text" id="ticker-input" name="ticker" placeholder="XYZ" required>
+                                    <label for="price-input" id="price-label">Underlying Price</label>
+                                    <input type="number" pattern="[0-9]" id="price-input" name="price" placeholder="0.00" required>
+                                    <label for="strike-input" id="strike-label">Strike Price</label>
+                                    <input type="number" pattern="[0-9]" id="strike-input" name="strike" placeholder="0.00" required>
+                                    <label for="premium-input" id="premium-label">Premium</label>
+                                    <input type="number" pattern="[0-9]" id="premium-input" name="premium" placeholder="0.00" required>
+                                </div>
+                            </form>
                         </div>
                     </section>
 
-                    <section class="main-grid-item" id="section-three">
+                    <section class="main-grid-item section-three" id="section-three">
                         <div class="section-three-grid-container">
-                            <button id="calculate-btn">Calculate</button>
-                            <button id="clear-btn">Clear</button>
-                            <h2 id="result-label">Breakeven:</h2>
-                            <h2 id="result-output">$</h2>
-                            <h2 is="percent-label">% to Breakeven:</h2>
-                            <h2 id="percent-output">%</h2>    
+                            <button id="calculate-btn">Calculate <img class="icon" src="./assets/SVGs/check.svg"></button>
+                            <button id="clear-btn">Clear <img class="icon" src="./assets/SVGs/clear.svg"></button>
+                            <h2 id="result-output"></h2>
+                            <h2 id="percent-output"></h2>    
                         </div>
                     </section>
 

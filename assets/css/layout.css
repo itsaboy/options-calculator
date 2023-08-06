@@ -94,8 +94,8 @@
 .section-one-grid-container {
     display: grid;
     grid-template-areas:
-    "strategy-label side-label"
-    "strategy-select side-select";
+    "side-label strategy-label"
+    "side-select strategy-select";
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
     height: 100%;
@@ -131,6 +131,15 @@
 .section-two-grid-container {
     display: grid;
     grid-template-areas:
+    "input-form";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    height: 100%;
+}
+
+.form-grid-container {
+    display: grid;
+    grid-template-areas:
     "ticker-label price-label"
     "ticker-input price-input"
     "strike-label premium-label"
@@ -142,7 +151,7 @@
     padding: 1rem;
 }
 
-.section-two-grid-container > * {
+.form-grid-container > * {
     margin: 0.25rem;
 }
 
@@ -187,10 +196,9 @@
     display: grid;
     grid-template-areas:
     "calculate-btn clear-btn"
-    "result-label result-label"
     "result-output result-output"
-    "percent-label percent-output";
-    grid-template-rows: repeat(4, 1fr);
+    "percent-output percent-output";
+    grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(2, 1fr);
     height: 100%;
     place-items: center;
