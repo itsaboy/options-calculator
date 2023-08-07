@@ -40,7 +40,7 @@ const calculateBreakeven = () => {
         breakeven = strikeInput + premiumInput;
         if (side == "long") {
             resultOutput.innerText = `
-            ${tickerInput} must go from ${priceInput} to ${breakeven.toFixed(2)} by expiration for you to breakeven.
+            ${tickerInput} must go from ${priceInput.toFixed(2)} to ${breakeven.toFixed(2)} by expiration for you to breakeven.
             `;
         } else if (side == "short") {
             resultOutput.innerText = `
@@ -51,7 +51,7 @@ const calculateBreakeven = () => {
         breakeven = strikeInput - premiumInput; 
         if (side == "long") {
             resultOutput.innerText = `
-            ${tickerInput} must go from ${priceInput} to ${breakeven.toFixed(2)} by expiration for you to breakeven.
+            ${tickerInput} must go from ${priceInput.toFixed(2)} to ${breakeven.toFixed(2)} by expiration for you to breakeven.
             `;
         } else if (side == "short") {
             resultOutput.innerText = `
