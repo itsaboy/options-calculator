@@ -7,13 +7,13 @@
     --body-bg-color: rgb(33, 32, 30);
     --header-bg-color: rgb(15, 51, 37);
     --main-bg-color: rgb(33, 32, 30);
-    --section-bg-color: rgb(46, 48, 51);
+    --section-bg-color: rgb(50, 50, 50);
     --footer-bg-color: rgb(173, 0, 14);
 
     /* Text Colors */
     --txt-color: rgb(225, 225, 225);
     --green-txt-color: rgb(68,214,44);
-    --red-txt-color: rgb(210,39,48);
+    --red-txt-color: rgb(200,75,70);
 
     /* Text Size */
     --largest-txt: clamp(3rem, 5vh + 1rem, 10rem);

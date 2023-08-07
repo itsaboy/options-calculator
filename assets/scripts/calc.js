@@ -63,10 +63,5 @@ const calculateBreakeven = () => {
     percentOutput.innerText = `
     That is a ${percent.toFixed(2)}% move!
     `;
-    
-    console.log(breakeven);
-    console.log(percent);
-    console.log(sideSelect());
-    console.log(strategySelect());
 };
 
