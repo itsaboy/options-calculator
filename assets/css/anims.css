@@ -62,3 +62,23 @@
     animation-name: fadeIn;
     animation-duration: 500ms;
 }
+
+#premium-tooltip[data-descr] {
+    position: relative;
+}
+
+#premium-tooltip[data-descr]:hover::before {
+    content: attr(data-descr);
+    position: absolute;
+    right: -25px;
+    bottom: 35px;
+    min-width: 20%;
+    border: none;
+    background-color: black;
+    opacity: 0.75;
+    padding: 12px;
+    color: white;
+    font-size: 1rem;
+    z-index: 1;
+    text-align: center;
+}

@@ -56,8 +56,12 @@
                                     <input type="number" pattern="[0-9]" id="price-input" name="price" placeholder="0.00" required>
                                     <label for="strike-input" id="strike-label">Strike Price</label>
                                     <input type="number" pattern="[0-9]" id="strike-input" name="strike" placeholder="0.00" required>
-                                    <label for="premium-input" id="premium-label">Premium</label>
-                                    <input type="number" pattern="[0-9]" id="premium-input" name="premium" placeholder="0.00" required>
+                                    <label for="premium-input" id="premium-label">
+                                        <span id="premium-tooltip" data-descr="$200 should be input as 2.00">Premium</span>
+                                        <img class="icon" src="./assets/SVGs/tooltip.svg">
+                                    </label>
+                                    <input type="number" pattern="[0-9]" id="premium-input" name="premium" placeholder="0.00" data-descr="*$200 in premium is 2.00*" required>
+                                    
                                 </div>
                             </form>
                         </div>
